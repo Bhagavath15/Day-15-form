@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            margin : 10px 10px 10px 10px;
+            background-color: antiquewhite;
+        }
+        #form-submit{
+            display: table-caption;
+            padding: 10px;
+        }
+        table,th,tr,td{
+            border: 3px solid black;
+            padding: 10px;
+        }
+
+        p{
+            width:auto;
+            height:20px;
+            border:3px solid black
+        }
+        button{
+            margin: 20px;
+            padding: 20px;
+            left:20px
+        }
+        
+    </style>
+</head>
+<body>
+    <div class = "form">
+        <form action="" id="form-submit">
+            <label for=""><b>FirstName :</b></label>
+            <input type="text" placeholder="firstname"><br><br>
+            <label for=""><b>LastName :</b></label>
+            <input type="text" placeholder="lastname"><br><br>
+            <label for=""><b>Address :</b></label>
+            <input type="text" placeholder="address"><br><br>
+            <label for=""><b>Pincode :</b></label>
+            <input type="text" placeholder="pincode"><br><br>
+            <label for=""><b>Gender :</b></label>
+            <input type="text" placeholder="gender"><br><br>
+            <label for=""><b>Choose Food :</b></label>
+            <select form="" id="food">
+                <option>Chicken Briyani</option>
+                <option>Mutton Briyani</option>
+                <option>Parotta</option>
+                <option>Grilled Chicken</option>
+                <option>Chicken Rice</option>
+            </select><br><br>
+            <label for=""><b>State :</b></label>
+            <input type="text" placeholder="state"><br><br>
+            <label for=""><b>City :</b></label>
+            <input type="text" placeholder="city"><br><br>
+            <button type="submit">Submit</button>
+
+        </form>
+        <br>
+        <br>
+        <hr>
+        <table>
+            <thead>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Address</th>
+                <th>Pincode</th>
+                <th>Gender</th>
+                <th>Food</th>
+                <th>State</th>
+                <th>City</th>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+    </div>
+    <br>
+    <br>
+    <hr>
+
+    <div>
+        <h3>Calculator</h3>
+        <p class ="data one-field"></p>
+        <p class = "data two-field"></p>
+    </div>
+    <div class= "calc">
+        <button onclick ="calc_func(this)">1</button>
+        <button onclick ="calc_func(this)">2</button>
+        <button onclick ="calc_func(this)">3</button>
+        <button onclick ="calc_func(this)">+</button><br>
+
+        <button onclick ="calc_func(this)">4</button>
+        <button onclick ="calc_func(this)">5</button>
+        <button onclick ="calc_func(this)">6</button>
+        <button onclick ="calc_func(this)">-</button><br>
+
+        <button onclick ="calc_func(this)">7</button>
+        <button onclick ="calc_func(this)">8</button>
+        <button onclick ="calc_func(this)">9</button>
+        <button onclick ="calc_func(this)">*</button><br>
+
+        <button onclick ="calc_func(this)">/</button>
+        <button onclick ="calc_func(this)">0</button>
+        <button onclick ="calc_func(this)">=</button>
+        <button onclick ="calc_func(this)">.</button>
+
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
